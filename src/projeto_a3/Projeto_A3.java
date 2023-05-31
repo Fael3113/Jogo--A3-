@@ -61,7 +61,8 @@ public class Projeto_A3 {
             if (play.humano == Pessoa) {
                 System.out.println(play.nome + ".\n"
                         + "Voce gostaria de re-lancar os dados?\n"
-                        + "(Digite o numero dos dados, separado por ',')");
+                        + "(Digite o numero dos dados, separado por ',')"
+                        + "(Digite zero para não re-lancar");           
                 play.lancarDados(new Scanner(System.in).nextLine());
             } else {
                 play.lancarDados(play.procurarMelhorSequencia());
