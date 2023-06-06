@@ -130,6 +130,7 @@ public class Jogo extends javax.swing.JFrame {
         jmiLimpar = new javax.swing.JMenuItem();
         jmiAtualizar = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jmiSalvar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -251,7 +252,11 @@ public class Jogo extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("Salvar");
+
+        jmiSalvar.setText("Salvar");
+        jMenu2.add(jmiSalvar);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -359,6 +364,7 @@ public class Jogo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenuItem jmiAtualizar;
     private javax.swing.JMenuItem jmiLimpar;
+    private javax.swing.JMenuItem jmiSalvar;
     private javax.swing.JLabel lblDado1;
     private javax.swing.JLabel lblDado10;
     private javax.swing.JLabel lblDado2;
